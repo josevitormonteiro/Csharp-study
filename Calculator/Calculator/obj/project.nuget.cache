@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "nV4aTxBYzpo32hPiXClpXz1reUbfFneX0heKeBlAoddOFKLmzLnUsTUy1hUkKPyFxV61pFzxXgtFjTkPrzZTYA==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\jose.monteiro\\Desktop\\Csharp-study\\Calculator\\Calculator\\Calculator.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\jose.monteiro\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\3.1.10\\microsoft.aspnetcore.app.ref.3.1.10.nupkg.sha512"
+  ],
+  "logs": []
+}
