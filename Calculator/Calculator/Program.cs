@@ -7,7 +7,7 @@
         internal static void Main(string[] args)
         {
             // Declare variables as zero
-            int num1 = 0; int num2 = 0;
+           double num1 = 0; double num2 = 0;
 
             // Display the title
             Console.WriteLine("Console calculator C#\r");
@@ -15,12 +15,12 @@
 
             // Ask the user for the first number
             Console.WriteLine("Type a number, and then press Enter");
-            num1 = Convert.ToInt32(Console.ReadLine());
+            num1 = Convert.ToDouble(Console.ReadLine());
 
 
             // Ask the user for the second number
             Console.WriteLine("Type another number, and then press Enter");
-            num2 = Convert.ToInt32(Console.ReadLine());
+            num2 = Convert.ToDouble(Console.ReadLine());
 
             // Ask the user to choose the option
             Console.WriteLine("Choose an option from the following list");
@@ -43,9 +43,14 @@
                     Console.WriteLine($"Your result: {num1} * {num2} = " + (num1 * num2));
                     break;
                 case "d":
+                    // Ask the user to enter a non-zero divisor until they do so.
+                    while (num2 == 0)
+                    {
+                        Console.WriteLine("Enter a non-zero divisor: ");
+                        num2 = Convert.ToDouble(Console.ReadLine());
+                    }
                     Console.WriteLine($"Your result: {num1} / {num2} = " + (num1 / num2));
                     break;
-
             }
 
             // Wait for the user to close the app
